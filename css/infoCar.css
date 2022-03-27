@@ -1,0 +1,49 @@
+.main {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #ddd;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.image img {
+    width: 850px;
+    height: 630px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    background-color: #fff;
+    width: 850px;
+    height: 630px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.info table {
+    width: 72%;
+    font-size: 24px;
+}
+
+.info table td {
+    padding: 8px;
+}
+
+@media only screen and (max-width: 480px) {
+    .image img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+}
