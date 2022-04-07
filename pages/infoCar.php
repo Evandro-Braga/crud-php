@@ -18,7 +18,7 @@ $car = $cars->car($idCar);
     <div class="container">
 
         <?php foreach ($car as $iten) : ?>
-            
+
             <div class="image">
                 <img src="./uploads/<?php echo $iten['img'] ?>">
             </div>
@@ -27,53 +27,99 @@ $car = $cars->car($idCar);
                 <table>
                     <tbody>
                         <tr>
-                            <td> Marca: </td>
-                            <td> <?php echo $iten['marca'] ?> </td>
+                            <td>
+                                Marca:
+                            </td>
+                            <td>
+                                <?php echo $iten['Marca'] ?>
+                            </td>
                         </tr>
 
                         <tr>
-                            <td> Modelo: </td>
-                            <td> <?php echo $iten['modelo'] ?> </td>
+                            <td>
+                                Modelo:
+                            </td>
+                            <td>
+                                <?php echo $iten['Modelo'] ?>
+                            </td>
                         </tr>
 
                         <tr>
-                            <td> Tipo de carroceria: </td>
-                            <td> <?php echo $iten['carroceria'] ?> </td>
+                            <td>
+                                Tipo de carroceria:
+                            </td>
+                            <td>
+                                <?php echo $iten['Carroceria'] ?>
+                            </td>
                         </tr>
 
                         <tr>
-                            <td> Motor: </td>
-                            <td> <?php echo $iten['motor'] ?> </td>
+                            <td>
+                                Motor:
+                            </td>
+                            <td>
+                                <?php echo $iten['Motor'] ?>
+                            </td>
                         </tr>
 
                         <tr>
-                            <td> Potencia: </td>
-                            <td> <?php echo $iten['potencia'] ?> </td>
+                            <td>
+                                Potencia:
+
+                            </td>
+                            <td>
+                                <?php echo $iten['Potencia'] ?> cv
+                            </td>
                         </tr>
 
                         <tr>
-                            <td> Torque: </td>
-                            <td> <?php echo $iten['torque'] ?> </td>
+                            <td>
+                                Torque:
+
+                            </td>
+                            <td>
+                                <?php echo $iten['Torque'] ?> kgfm
+                            </td>
                         </tr>
 
                         <tr>
-                            <td> Peso: </td>
-                            <td> <?php echo $iten['peso'] ?> kg </td>
+                            <td>
+                                Peso:
+
+                            </td>
+                            <td>
+                                <?php echo $iten['Peso'] ?> kg
+                            </td>
                         </tr>
 
                         <tr>
-                            <td> Tipo do cambio: </td>
-                            <td> <?php echo $iten['cambio'] ?> </td>
+                            <td>
+                                Tipo do cambio:
+
+                            </td>
+                            <td>
+                                <?php echo $iten['Cambio'] ?>
+                            </td>
                         </tr>
 
                         <tr>
-                            <td> 0 a 100km/h: </td>
-                            <td> <?php echo $iten['zeroaCem'] ?> </td>
+                            <td>
+                                0 a 100km/h:
+
+                            </td>
+                            <td>
+                                <?php echo $iten['0a100'] ?> sec
+                            </td>
                         </tr>
 
                         <tr>
-                            <td> Velocidade Maxima: </td>
-                            <td> <?php echo $iten['velocidadeMax'] ?> </td>
+                            <td>
+                                Velocidade Maxima:
+
+                            </td>
+                            <td>
+                                <?php echo $iten['VelocidadeMax'] ?> km/h
+                            </td>
                         </tr>
                     </tbody>
                 </table>

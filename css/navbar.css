@@ -12,15 +12,11 @@
 }
 
 h3 a {
-    color: white;
+    color: #CD0000;
     font-family: 'Kaushan Script', cursive;
     transition: 0.4s;
     cursor: pointer;
     text-decoration: none;
-}
-
-h3 a:hover {
-    color: #CD0000;
 }
 
 .nav-links {

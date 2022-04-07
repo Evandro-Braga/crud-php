@@ -4,6 +4,8 @@
 
 <footer>
     <div class="footer-container">
-        <p> Copyright@ - InfoSuperCars </p>
+        <p> 
+            Copyright@ - InfoSupercars
+        </p>
     </div>
 </footer>

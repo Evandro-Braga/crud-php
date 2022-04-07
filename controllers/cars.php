@@ -17,31 +17,30 @@ class carsController
 
     private function incluir()
     {
-        $marca = ($_POST['marca']);
-        $modelo = ($_POST['modelo']);
-        $carroceria = ($_POST['carroceria']);
-        $motor = ($_POST['motor']);
-        $potencia = ($_POST['potencia']);
-        $torque = ($_POST['torque']);
-        $peso = ($_POST['peso']);
-        $cambio = ($_POST['cambio']);
-        $zeroaCem = ($_POST['zeroaCem']);
-        $velocidadeMax = ($_POST['velocidadeMax']);
-        $desc = ($_POST['desc']);
+        if (isset($_POST['register'])) {
 
-        if(isset($_FILES['arquivo'])) {
+            $marca = ($_POST['marca']);
+            $modelo = ($_POST['modelo']);
+            $carroceria = ($_POST['carroceria']);
+            $motor = ($_POST['motor']);
+            $potencia = ($_POST['potencia']);
+            $torque = ($_POST['torque']);
+            $peso = ($_POST['peso']);
+            $cambio = ($_POST['cambio']);
+            $zeroaCem = ($_POST['0a100']);
+            $velocidadeMax = ($_POST['velocidadeMax']);
 
-            $extencao = strtolower(substr($_FILES['arquivo']['name'], -4));
-            $novo_nome = md5(time()) . $extencao;
+            if (isset($_FILES['arquivo'])) {
 
-            $diretorio = '../uploads/';
+                $extencao = strtolower(substr($_FILES['arquivo']['name'], -4));
+                $novo_nome = md5(time()) . $extencao;
 
-            move_uploaded_file($_FILES['arquivo']['tmp_name'], $diretorio.$novo_nome);
+                $diretorio = '../uploads/';
 
-            
-        }
-
-        $this->cars->cadastrar($marca,$modelo,$carroceria,$motor,$potencia,$torque,$peso,$cambio,$zeroaCem,$velocidadeMax,$novo_nome,$desc);
+                move_uploaded_file($_FILES['arquivo']['tmp_name'], $diretorio . $novo_nome);
+            };
+        };
+        $this->cars->cadastrar($marca,$modelo,$carroceria,$motor,$potencia,$torque,$peso,$cambio,$zeroaCem,$velocidadeMax,$novo_nome);
 
         $this->util::redirect('home');
         

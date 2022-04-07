@@ -15,31 +15,28 @@ $lista = $cars->listar();
 
     <div class="image-container">
         <div class="banner">
-            <p> InfoSuperCars - Veja a Ficha Tecnica dos supercarros! </p>
+            <p>
+                InfoSupercars - Veja a Ficha Tecnica dos supercarros!
+            </p>
         </div>
     </div>
 
     <div class="card-container">
-
         <?php foreach ($lista as $iten) : ?>
-
-            <a href="infocar?car=<?php echo $iten['id'] ?>">
+            <a href="infocar?car=<?php echo $iten['ID'] ?>">
                 <div class="card">
-
                     <img src="./uploads/<?php echo $iten['img'] ?>">
-
                     <div class="card-info">
-                        <h4><b> <?php echo $iten['modelo'] ?> </b></h4>
-                        <p> <?php echo $iten['descricao'] ?> </p>
+                        <h4>
+                            <b>
+                                <?php echo $iten['Modelo'] ?>
+                            </b>
+                        </h4>
                     </div>
-
                 </div>
             </a>
-
         <?php endforeach ?>
     </div>
-
-
 
     <?php include('./layout/footer.php') ?>
 </div>

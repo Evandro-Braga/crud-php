@@ -12,9 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@300&family=Syne+Mono&display=swap" rel="stylesheet">
 
-    <title>InfoSuperCars</title>
+    <title>InfoSupercars</title>
 </head>
 
 <nav class="navbar">
-    <h3> <a href="home"> InfoSuperCars </a> </h3>
+    <h3>
+        <a href="home">
+            InfoSupercars
+        </a>
+    </h3>
 </nav>
